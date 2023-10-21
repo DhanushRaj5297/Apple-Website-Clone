@@ -1,7 +1,5 @@
 * {
-    /* background-color: wheat; */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    font-family: system-ui, sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -12,51 +10,47 @@ a {
 }
 
 header {
-    background-color: #000000c1;
-
+    background-color:rgba(0, 0, 0, 0.8);
 }
 
 header ul {
-    padding: 0% 20%;
-
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
     list-style-type: none;
+    height: 44px;
+    align-items: center;
+    
 }
 
 
-header ul li a {
-    color: white;
-}
-
-header ul li {
+header ul li a{
     display: block;
     padding: 15px 0px;
     color: white;
-
     font-size: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* List CSS */
 
 .list {
-    /* width: auto; */
+    height:116px;
     padding: 0% 15%;
-
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center; 
     gap: 10px;
-
-    font-size: 10px;
     text-align: center;
-
-    background-color: #6e6e7313;
+    background-color: #FBFBFD;;
+    
 }
 
-.list div {
-    padding: 5px 0px;
+.list p{
+    color:#1D1D1F;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.12px;
 }
 
 .list img {
@@ -66,13 +60,14 @@ header ul li {
     /* align-self: auto; */
 }
 
-.new {
+.list .new {
     color: #BF4800;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: 12px;
     letter-spacing: -0.08px;
+    
 }
 
 /* Hero Section starts here */
@@ -102,7 +97,6 @@ header ul li {
 .new2 {
     color: #6E6E73;
     text-align: center;
-    font-family: SF Pro Text;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -113,7 +107,7 @@ header ul li {
 
 }
 
-.forteen {
+.iPhone_14{
     font-size: 1.3rem;
     font-weight: 600;
 }
@@ -163,285 +157,13 @@ header ul li {
     letter-spacing: 0.231px;
 }
 
-/* Featured section styling here */
-
-.featured {
-    background-color: #000000;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-between;
-    align-items: center;
-}
-
-.featured-upper-div {
-
-    padding-top: 7%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.featured img {
-    height: 400px;
-    width: auto;
-}
-
-.forteen-pro {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-}
-
-.hero-headline2 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 52.008px;
-    /* 108.349% */
-    letter-spacing: -0.144px;
-
-    background: linear-gradient(180deg, #FFB6FF 0%, #B344FF 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 .regular-text-white {
     color: white;
 }
 
-
-/* Guided tour starts here */
-.guided-tour {
-    height: 100vh;
-
-    background-image: url(./assets/iphone-holding-man.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    margin: 1% 3% 1% 3%;
-
-    color: white;
-
-    display: flex;
-    align-items: center;
-}
-
-.tour {
-    padding-left: 15%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.tour-text {
-    color: #FFF;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    /* 116.667% */
-    letter-spacing: 0.216px;
-}
-
-.guided-tour h1 {
-    color: #FFF;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 700;
-    /* line-height: 52.008px; */
-    /* 108.349% */
-    /* letter-spacing: -0.144px; */
-}
-
-.watch-the-film-btn {
-    display: flex;
-    width: 142.234px;
-    height: 36px;
-    padding: 8px 15.6px 8px 16px;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 980px;
-    background: #FFF;
-
-    color: #000;
-    text-align: center;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    /* 117.648% */
-    letter-spacing: -0.374px;
-
-    border: none;
-}
-
-.watch-the-film-btn:hover {
+button:hover {
     cursor: pointer;
 }
 
 
-/* Comparison section styling here */
-
-.comparison {
-    color: #1D1D1F;
-    text-align: center;
-    font-size: 0.8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    /* 142.859% */
-    letter-spacing: -0.224px;
-}
-
-.comparison h2 {
-    color: #1D1D1F;
-    text-align: center;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 52.008px;
-    /* 108.349% */
-    letter-spacing: -0.144px;
-
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-.comparisonTable {
-
-    width: 65%;
-    margin: 0 auto;
-
-    display: grid;
-    gap: 1rem;
-
-    grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(8, 1fr); */
-
-}
-
-.iphone-info {
-    display: flex;
-    flex-direction: column;
-
-    gap: 8px;
-}
-
-
-.price-chart {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: space-around; */
-    gap: 1rem;
-
-    border-bottom: 1px solid #D2D2D7;
-
-    padding: 1.5rem 0;
-}
-
-.bold1 {
-    font-weight: bold;
-}
-
-.screen-size {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-}
-
-.dyanamic-island {
-    display: flex;
-}
-
-.di {
-    color: #6E6E73;
-    text-align: center;
-    font-size: 0.7rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    /* 142.859% */
-    letter-spacing: -0.224px;
-}
-
-.small1 {
-    /* font-size: 14px; */
-    color: #1D1D1F;
-}
-
-.spec-new-text {
-    color: #BF4800;
-    text-align: center;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-    /* 133.337% */
-    letter-spacing: -0.12px;
-}
-
-.hidden {
-    visibility: hidden;
-}
-
-.spec-btn-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    justify-content: center;
-
-}
-
-.spec-buy-btn {
-
-    display: flex;
-    width: 45px;
-    height: 24px;
-    padding: 5px 11.784px 5px 11.969px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-style: none;
-
-    color: #FFF;
-    text-align: center;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-    /* 133.337% */
-    letter-spacing: -0.12px;
-
-    border-radius: 980px;
-    background: #0071E3;
-}
-
-.spec-learn-more {
-    color: #06C;
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    /* 142.859% */
-    letter-spacing: -0.224px;
-}
-
-.iphone-figures {
-    /* display: flex; */
-}
