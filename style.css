@@ -5,37 +5,53 @@
     box-sizing: border-box;
 }
 
-a {
+a { /*removing all anchor tag link's underlines*/
     text-decoration: none;
 }
 
-header {
+nav {
+    position: fixed;
+    display:flex;
     background-color:rgba(0, 0, 0, 0.8);
-}
-
-header ul {
-    display: flex;
     justify-content: center;
-    list-style-type: none;
-    height: 44px;
     align-items: center;
-    
+    height: 44px;
+    width: 100vw;
+    padding:0px 400px;
+    margin-bottom: 44px;
+    z-index: 1;
+
 }
 
+nav>* {
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    margin-inline: 10px;
+}
 
-header ul li a{
-    display: block;
-    padding: 15px 0px;
+nav>ul>li{
+    padding: 8px;
+    list-style-type: none;
+}
+
+nav>ul>li>a{
+    display: flex;
+    flex-wrap: nowrap;
     color: white;
     font-size: 12px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 0px 8px
 }
 
 /* List CSS */
 
 .list {
+    position: relative;
+    top: 44px;
     height:116px;
+    border-top: 44px;
     padding: 0% 15%;
     display: flex;
     justify-content: space-between;
@@ -54,10 +70,8 @@ header ul li a{
 }
 
 .list img {
-    /* width: 40px; */
     height: 54px;
-    flex-shrink: 0;
-    /* align-self: auto; */
+
 }
 
 .list .new {
@@ -67,6 +81,8 @@ header ul li a{
     font-weight: 400;
     line-height: 12px;
     letter-spacing: -0.08px;
+
+
     
 }
 
